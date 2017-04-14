@@ -21,8 +21,8 @@
 //////////////////////
 // WiFi Definitions //
 //////////////////////
-const char WiFiSSID[] = "WIFI_SSID";
-const char WiFiPSK[] = "WIFI_PASSWORD";
+const char WiFiSSID[] = "TP-LINK_FFC0";
+const char WiFiPSK[] = "71845968";
 
 /////////////////////
 // Pin Definitions //
@@ -69,8 +69,7 @@ void setup()
 
   blink(3);  //three quick blinks at the beginning indicates successful init of BMP
   delay(500);
-  Serial.print("Connecting to ");
-  Serial.println(WiFiSSID);
+  Serial.print("Connecting to WiFi");
   connectWiFi();
   digitalWrite(LED_PIN, HIGH); //light on indicates successful connection to WiFi
 }
